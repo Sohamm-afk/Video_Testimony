@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#111318">
+  <meta name="description" content="Watch learner stories about building practical skills through hands-on projects.">
+  <title>Learner video testimonials</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+  <link rel="stylesheet" href="./style.css">
+  <script src="./script.js" defer></script>
+</head>
+<body>
+  <main>
+    <section class="testimonials" aria-labelledby="testimonials-title">
+      <div class="section-heading">
+        <p class="eyebrow"><i class="fa-solid fa-circle-play" aria-hidden="true"></i> Learner stories</p>
+        <h1 id="testimonials-title">Stories from people who learned by building</h1>
+        <p class="section-intro">Hear how hands-on projects helped people grow their skills.</p>
+      </div>
+      <div class="testimonial-grid" data-testimonial-grid></div>
+    </section>
+  </main>
+
+  <dialog class="video-modal" data-video-modal aria-labelledby="modal-video-name" aria-describedby="modal-video-summary">
+    <div class="modal-card">
+      <div class="modal-topbar">
+        <p class="modal-counter" data-modal-counter></p>
+        <button class="icon-button" type="button" aria-label="Close video" data-close-modal>
+          <i class="fa-solid fa-xmark" aria-hidden="true"></i>
+        </button>
+      </div>
+      <div class="video-frame" data-video-frame></div>
+      <div class="modal-details">
+        <div class="modal-copy">
+          <p class="modal-role" data-modal-role></p>
+          <h2 id="modal-video-name" data-modal-name></h2>
+          <p id="modal-video-summary" data-modal-summary></p>
+        </div>
+        <nav class="video-navigation" aria-label="Developer stories">
+          <button class="nav-button" type="button" data-previous-video>
+            <i class="fa-solid fa-arrow-left" aria-hidden="true"></i>
+            <span>Previous</span>
+          </button>
+          <button class="nav-button" type="button" data-next-video>
+            <span>Next</span>
+            <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+          </button>
+        </nav>
+      </div>
+    </div>
+  </dialog>
+</body>
+</html>
